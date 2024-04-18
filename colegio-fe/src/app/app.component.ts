@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'colegio-fe';
+  constructor( private router: Router)
+  {}
+
+  public fncVerAlumnos()
+  {
+    this.router.navigate(['/alumnos']);
+  }
+
+  public fncVerProfesores()
+  {
+    this.router.navigate(['/profesores']);
+  }
 }

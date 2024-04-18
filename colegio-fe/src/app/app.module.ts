@@ -7,6 +7,10 @@ import { AppComponent } from './app.component';
 import { HttpClientModule, provideHttpClient } from '@angular/common/http';
 import { withFetch } from '@angular/common/http';
 
+import {MatFormFieldModule} from '@angular/material/form-field'; 
+import {MatTableModule} from '@angular/material/table'; 
+import {MatDatepickerModule} from '@angular/material/datepicker'; 
+
 @NgModule({
   declarations: [
     AppComponent
@@ -16,6 +20,10 @@ import { withFetch } from '@angular/common/http';
     AppRoutingModule,
     MatSlideToggleModule,
     MatButtonModule,
+    MatFormFieldModule,
+    MatTableModule,
+    MatButtonModule,
+    MatDatepickerModule
   ],
   providers: [
     provideClientHydration(),
